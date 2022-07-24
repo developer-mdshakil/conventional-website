@@ -1,0 +1,130 @@
+/************* google-fonts ****************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/************ common css ***************/
+body,h1,h2,h3,h4,h5,h6,a,strong,span{
+    font-family: 'Poppins', sans-serif;
+}
+.text-colors{
+    color: #848199;
+}
+/********* stylesheet css started *********/
+/*************** navbar ************/
+.navbar-brand{
+    text-decoration: none;
+    font-size: 1.375rem;
+    color: #3E3E3E;
+    font-weight: 700;
+}
+.nav-link{
+    color: #3E3E3E;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/*********** banner-area ************/
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+.carousel-caption h5{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.carousel-caption p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/********* about-section ********/
+.about-content{
+    position: relative;
+}
+.about-content h2{
+    font-weight: 700;
+    color: #0A0826;
+    font-size: 2.375rem;
+}
+.about-content a {
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+}
+.about-content p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.about-content .alert {
+    position: absolute;
+    top: 42px;
+    right: -115px;
+}
+/************** pricing-section ***************/
+.h1{
+    font-weight: 700;
+}
+.card{
+    position: relative;
+}
+.card-header h1{
+    font-weight: 700;
+    font-size: 2.25;
+    color: #231D4F;
+}
+.card-text{
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+.card-itms li::before{
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 0.313rem;
+    color: #EDECF9;
+    font-size: 1.25rem;
+    background-color: #5243C2;
+    border-radius: 50%;
+}
+#active-items li::before{
+    background-color: #EDECF9;
+    color: #0D99FF;
+}
+.card-body .btn-warning{
+    background-color: #FEF5FA;
+    border-color: #FEF5FA;
+    outline-color: #FEF5FA;
+}
+.badge {
+    position: absolute;
+    top: 0;
+    right: -2.625rem;
+    background-color: #FF4E4E !important;
+}
+
+
+
+
+
+/*----- media quari started -------*/
+/************* mobile device responsive ***************/
+@media only screen and (max-width: 576px) {
+    .about-area {
+        flex-direction: column-reverse;
+    }
+    .about-content a {
+        position: relative;
+        top: 19.938rem;
+        left: 5.438rem;
+    }
+    .about-content .alert {
+        top: -0.313rem;
+        right: 4.125rem;
+    }
+    .card {
+        margin-bottom: 4rem;
+    }
+    .badge {
+        position: absolute;
+        top: -1.125rem;
+        right: 0.375rem;
+    }
+}
